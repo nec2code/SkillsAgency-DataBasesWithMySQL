@@ -99,3 +99,17 @@ ALTER TABLE facturas CHANGE cliente_id id_cliente INT;
 ALTER TABLE facturas CHANGE articulo_id id_articulo INT;
 ALTER TABLE facturas MODIFY monto DOUBLE UNSIGNED;  
 DESCRIBE facturas;
+
+
+# Etapa 3: Insertar registros en las tablas
+
+/*1.3.1. Insertar 5 registros en la tabla FACTURAS, tal
+como se detallan a continuanción.*/
+INSERT INTO facturas (letra, numero, id_cliente, id_articulo, fecha, monto) VALUES
+('A', 28, 14, 335, '2021-03-18', 1589.50),
+('A', 39, 26, 157, '2021-04-12', 979.75),
+/*
+('B', 1, 3, 3, '2024-01-03', 300.00),
+('B', 2, 4, 4, '2024-01-04', 400.00),
+('C', 1, 5, 5, '2024-01-05', 500.00);*/
+SELECT * FROM facturas;
